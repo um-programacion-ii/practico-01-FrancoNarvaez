@@ -29,6 +29,9 @@ public class Ingrediente {
         else {this.cantidad -= cantidad;
     }
     }
+    public void agregar(int cantidad) {
+        this.cantidad += cantidad;
+    }
     @Override
     public String toString() {
         return "Ingrediente [cantidad=" + cantidad + ", nombre=" + nombre + "]";
