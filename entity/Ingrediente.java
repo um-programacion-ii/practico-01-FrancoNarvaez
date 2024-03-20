@@ -1,4 +1,6 @@
-class Ingrediente {
+package entity;
+
+public class Ingrediente {
     protected String nombre;
     protected int cantidad;
 
@@ -21,12 +23,5 @@ class Ingrediente {
     @Override
     public String toString() {
         return "Ingrediente [cantidad=" + cantidad + ", nombre=" + nombre + "]";
-    }
-}
-
-class main {
-    public static void main {
-        Ingrediente ingrediente = new Ingrediente("Azucar", 2);
-        System.out.println(ingrediente);
     }
 }
