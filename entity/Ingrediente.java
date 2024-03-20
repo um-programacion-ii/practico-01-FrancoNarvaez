@@ -1,8 +1,9 @@
-class Ingrediente {
-    protected String nombre;
-    protected int cantidad;
+package entity;
 
-    public Ingrediente(String nombre,int cantidad) {
+public class Ingrediente {
+    private String nombre;
+    private int cantidad;
+    public Ingrediente(String nombre, int cantidad) {
         this.nombre = nombre;
         this.cantidad = cantidad;
     }
@@ -18,15 +19,18 @@ class Ingrediente {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+    public void aumentarCantidad(int cantidad) {
+        this.cantidad += cantidad;
+    }
+    public void sacar(int cantidad) {
+        if (this.cantidad < cantidad) {
+            System.out.println("No hay suficiente cantidad de " + this.nombre);
+        }
+        else {this.cantidad -= cantidad;
+    }
+    }
     @Override
     public String toString() {
         return "Ingrediente [cantidad=" + cantidad + ", nombre=" + nombre + "]";
-    }
-}
-
-class main {
-    public static void main {
-        Ingrediente ingrediente = new Ingrediente("Azucar", 2);
-        System.out.println(ingrediente);
     }
 }
