@@ -19,5 +19,13 @@ public class Main {
         despensa.getIngrediente("Azucar", 4);
         despensa.getIngrediente("Pan", 3);
 
+        HuevoDuro huevoDuro = new HuevoDuro();
+        System.out.println(huevoDuro);
+
+        ArrozConLeche arrozConLeche = new ArrozConLeche();
+        System.out.println(arrozConLeche);
+
+        Ensalada ensalada = new Ensalada();
+        System.out.println(ensalada);
     }
 }
