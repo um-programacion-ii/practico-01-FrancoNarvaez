@@ -2,14 +2,16 @@ package entity;
 
 public class Main {
     public static void main(String[] args){
-        Ingrediente ingrediente = new Ingrediente("Azucar", 2);
-        System.out.println(ingrediente);
-        Ingrediente ingrediente1 = new Ingrediente("Pan", 3);
-        System.out.println(ingrediente1);
+        Ingrediente azucar = new Ingrediente("Azucar", 500);
+        System.out.println(azucar);
+        Ingrediente pan = new Ingrediente("Pan", 3);
+        System.out.println(pan);
+        Ingrediente huevo = new Ingrediente("Huevo", 12);
+        System.out.println(huevo);
+        Ingrediente arroz = new Ingrediente("Arroz", 100);
+        System.out.println(arroz);
 
         Despensa despensa = new Despensa();
-        Ingrediente azucar = new Ingrediente("Azucar", 5);
-        Ingrediente pan = new Ingrediente("Pan", 3);
 
         despensa.addIngrediente(azucar);
         despensa.addIngrediente(pan);
