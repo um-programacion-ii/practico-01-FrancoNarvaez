@@ -37,3 +37,12 @@ public class Ingrediente {
         return "Ingrediente [cantidad=" + cantidad + ", nombre=" + nombre + "]";
     }
 }
+class Receta {
+    private int tiempoCoccion;
+    public Ingrediente[] ingredientes;
+    private String preparacion;
+    public Receta(int tiempoCoccion, Ingrediente[] ingredientes) {
+        this.tiempoCoccion = tiempoCoccion;
+        this.ingredientes = ingredientes;
+    }
+}
